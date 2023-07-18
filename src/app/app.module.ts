@@ -10,6 +10,7 @@ import { ListaPokemonsComponent } from './components/lista-pokemons/lista-pokemo
 import { PokemonComponent } from './components/lista-pokemons/pokemon/pokemon.component';
 import { NavbarComponent } from './utils/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AboutComponent } from './components/about/about.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
