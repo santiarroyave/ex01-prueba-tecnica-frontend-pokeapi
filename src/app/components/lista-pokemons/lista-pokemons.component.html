@@ -1,32 +1,16 @@
 <app-navbar></app-navbar>
-<div class="container">
-    <h1 class="mt-4">Pokemons</h1>
-    
+<div class="container mb-5">
+    <h1 class="mt-4">Lista de pokemons</h1>
     <!-- {{pokemons | json}} -->
 
-    <!-- Pokemons -->
-    <!-- <div class="container mt-4">
+    <div class="container mt-2">
         <div class="row row-cols-4 justify-content-center" *ngIf="pokemons!=null; else espera">
 
-            <div *ngFor="let pokemon of pokemons.results" class="card cartaPersonaje mt-4 mx-3">
-                <img src="{{pokemon.image}}" alt="" class="card-img-top">
-                <div class="d-grid gap-2 contTitulo">
-                    <h4 class="m-2">{{pokemon.name}}</h4>
-                    <button class="btn btn-warning" (click)="verPokemon(pokemon.url)">Ver pokemon</button>
-                </div>
-                
-            </div>
-        </div>
-    </div> -->
-    <div class="container mt-4">
-        <div class="row row-cols-4 justify-content-center" *ngIf="pokemons!=null; else espera">
-            <!-- {{idsNamesImages | json}} -->
-            
             <div *ngFor="let pokemon of pokemons" class="card cartaPersonaje mt-4 mx-3">
                 <img src="{{pokemon.image}}" alt="" class="card-img-top">
                 <div class="d-grid gap-2 contTitulo">
-                    <h4 class="m-2">{{pokemon.name}}</h4>
-                    <button class="btn btn-warning" (click)="verPokemon(pokemon.id)">Ver pokemon</button>
+                    <h4 class="m-2 text-center">{{pokemon.name}}</h4>
+                    <button class="btn btn-warning" (click)="verPokemon(pokemon.id)">Ver más</button>
                 </div>
                 
             </div>
