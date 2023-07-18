@@ -12,8 +12,7 @@ export class ListaPokemonsComponent implements OnInit {
   // ATRIBUTOS
   pokemons:any = new Array;
   pokemon:any = null;
-  // idsNamesImages:any[] = [];
-  idsNamesImages:any= new Array;
+
 
   // CONSTRUCTOR
   constructor(private pokemonsService: PokemonsService){};
@@ -31,7 +30,7 @@ export class ListaPokemonsComponent implements OnInit {
     alert("Mostrando pokemon");
   };
 
-  // Recorre la lista de pokemons y guarda (ID, Nombre y Foto en la variable Pokemons)
+  // Recorre la lista de pokemons y va guardando su (id, name y image) en la lista "pokemons"
   obtenerDatosFiltrados(lista:any):any{
     let urls:any[] = [];
 
@@ -48,7 +47,7 @@ export class ListaPokemonsComponent implements OnInit {
     }
   }
 
-  // Recibe un pokemon como argumento, filtra la informacion y devuelve un string con el (ID, Nombre y Foto)
+  // Recibe un pokemon como argumento, filtra la informacion y devuelve un string con su (id, name y image)
   obtenerIdNombreFoto(dato:any):string{
     // Ruta fotos -> /sprites > other > official-artwork > front_default
     let pokemon:any;
