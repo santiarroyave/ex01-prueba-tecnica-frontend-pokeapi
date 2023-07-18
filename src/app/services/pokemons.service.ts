@@ -22,4 +22,8 @@ export class PokemonsService {
   getById(id:any){
     return this.http.get(`${baseUrl}/${id}`);
   }
+
+  getUrlByName(name:string){
+    return this.http.get(`${baseUrl}/${name}`);
+  }
 }
