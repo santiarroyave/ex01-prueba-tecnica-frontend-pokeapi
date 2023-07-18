@@ -7,14 +7,14 @@ import { PokemonsService } from 'src/app/services/pokemons.service';
   templateUrl: './pokemon.component.html',
   styleUrls: ['./pokemon.component.css']
 })
-export class PokemonComponent {
+export class PokemonComponent implements OnInit{
 
   // ATRIBUTOS
   id!:number;
   pokemon:any;
 
   // CONSTRUCTOR
-  constructor( private route: ActivatedRoute, private pokemonsService: PokemonsService, ) { };
+  constructor( private route: ActivatedRoute, private pokemonsService: PokemonsService) { };
 
   ngOnInit(){
 
