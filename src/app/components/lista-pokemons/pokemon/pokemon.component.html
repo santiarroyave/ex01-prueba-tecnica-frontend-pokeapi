@@ -1,1 +1,22 @@
-<p>pokemon works!</p>
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col mt-3">
+            <h1 class="mb-3">{{pokemon.name}}</h1>
+            <hr>
+            <p><strong>ID:</strong> {{pokemon.id}}</p>
+            <p><strong>PESO:</strong> {{pokemon.weight}}</p>
+            <p><strong>Habilidades:</strong></p>
+            <ul>
+                <li *ngFor="let habilidades of pokemon.abilities">
+                    {{habilidades.ability['name']}}
+                </li>
+            </ul>
+        </div>
+        <div class="col col-12 col-md-3">
+            <img src="{{pokemon.sprites.other['official-artwork']['front_default']}}" class="img-fluid" alt="...">
+        </div>
+    </div>
+
+</div>

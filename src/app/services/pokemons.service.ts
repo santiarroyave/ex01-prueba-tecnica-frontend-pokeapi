@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-const baseUrl = "https://pokeapi.co/api/v2/pokemon/";
+const baseUrl = "https://pokeapi.co/api/v2/pokemon";
 
 
 @Injectable({
@@ -15,12 +15,11 @@ export class PokemonsService {
     return this.http.get(baseUrl);
   }
 
+  getByUrl(url:string){
+    return this.http.get(url);
+  }
+
   getById(id:any){
     return this.http.get(`${baseUrl}/${id}`);
-  }
-  
-  getByUrl(url:string){
-    // return this.http.get(`${baseUrl}/${id}`);
-    return this.http.get(url);
   }
 }

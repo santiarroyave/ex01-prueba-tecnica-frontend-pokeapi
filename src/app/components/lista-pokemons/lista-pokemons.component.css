@@ -11,3 +11,7 @@
 .contTitulo{
     padding: 5%;
 }
+
+h4:first-letter{
+    text-transform: uppercase;
+}

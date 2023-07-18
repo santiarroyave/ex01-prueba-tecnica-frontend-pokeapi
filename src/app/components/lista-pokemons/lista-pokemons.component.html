@@ -10,7 +10,7 @@
                 <img src="{{pokemon.image}}" alt="" class="card-img-top">
                 <div class="d-grid gap-2 contTitulo">
                     <h4 class="m-2 text-center">{{pokemon.name}}</h4>
-                    <button class="btn btn-warning" (click)="verPokemon(pokemon.id)">Ver más</button>
+                    <button class="btn btn-warning" routerLink="{{pokemon.id}}">Ver más</button>
                 </div>
                 
             </div>
@@ -19,4 +19,6 @@
 
 
 <ng-template #espera>Esperando datos...</ng-template>
+
+<app-pokemon></app-pokemon>
 </div>
