@@ -7,6 +7,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { ListaPokemonsComponent } from './components/lista-pokemons/lista-pokemons.component';
+import { PokemonComponent } from './components/lista-pokemons/pokemon/pokemon.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ListaPokemonsComponent } from './components/lista-pokemons/lista-pokemo
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    ListaPokemonsComponent
+    ListaPokemonsComponent,
+    PokemonComponent
   ],
   imports: [
     BrowserModule,
