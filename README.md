@@ -1,5 +1,8 @@
 # EX01 - Prueba tecnica frontend PokeAPI
 
+## Fotos
+![imagen](https://github.com/santiarroyave/sao-fe-gc-ex01-prueba-tecnica-frontend-pokeapi-07-2023/assets/135848692/86905afe-6069-4d57-aa6a-d4c741491faa)
+
 ## Documentación de Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
