@@ -25,10 +25,6 @@ export class ListaPokemonsComponent implements OnInit {
       this.obtenerDatosFiltrados(result);
     });
   }
-  
-  verPokemon(url:string){
-    alert("Mostrando pokemon");
-  };
 
   // Recorre la lista de pokemons y va guardando su (id, name y image) en la lista "pokemons"
   obtenerDatosFiltrados(lista:any):any{

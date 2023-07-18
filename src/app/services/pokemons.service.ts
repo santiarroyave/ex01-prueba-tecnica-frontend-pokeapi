@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 const baseUrl = "https://pokeapi.co/api/v2/pokemon";
 
@@ -19,7 +20,11 @@ export class PokemonsService {
     return this.http.get(url);
   }
 
-  getById(id:any){
-    return this.http.get(`${baseUrl}/${id}`);
+  getById(id:any):Observable<any>{
+    return this.http.get<any>(`${baseUrl}/${id}`);
+  }
+
+  getUrlByName(name:string):Observable<any>{
+    return this.http.get<any>(`${baseUrl}/${name}`);
   }
 }
