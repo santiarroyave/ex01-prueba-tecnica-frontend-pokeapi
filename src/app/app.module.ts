@@ -8,6 +8,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { ListaPokemonsComponent } from './components/lista-pokemons/lista-pokemons.component';
 import { PokemonComponent } from './components/lista-pokemons/pokemon/pokemon.component';
+import { NavbarComponent } from './utils/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PokemonComponent } from './components/lista-pokemons/pokemon/pokemon.co
     RegisterComponent,
     HomeComponent,
     ListaPokemonsComponent,
-    PokemonComponent
+    PokemonComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
