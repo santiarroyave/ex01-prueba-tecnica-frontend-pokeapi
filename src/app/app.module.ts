@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ListaPokemonsComponent } from './components/lista-pokemons/lista-pokemons.component';
 import { PokemonComponent } from './components/lista-pokemons/pokemon/pokemon.component';
 import { NavbarComponent } from './utils/navbar/navbar.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavbarComponent } from './utils/navbar/navbar.component';
     HomeComponent,
     ListaPokemonsComponent,
     PokemonComponent,
-    NavbarComponent
+    NavbarComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
